@@ -52,6 +52,7 @@ class CustomSlider extends ContentEntityBase implements ContentEntityInterface {
 
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
+      ->setTranslatable(TRUE)
       ->setDisplayOptions('view', array(
         'label' => 'above',
         'type' => 'string',
@@ -66,6 +67,7 @@ class CustomSlider extends ContentEntityBase implements ContentEntityInterface {
 
     $fields['description'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Slider description'))
+      ->setTranslatable(TRUE)
       ->setDescription(t('A brief description of your slider.'))
       ->setDisplayOptions('view', array(
         'label' => 'above',
