@@ -1,0 +1,22 @@
+# Define the 'local' links for the module
+
+customslider.settings_tab:
+  route_name: customslider.customslider_settings
+  title: Settings
+  base_route: customslider.customslider_settings
+
+customslider.view:
+  route_name: entity.customslider.canonical
+  base_route: entity.customslider.canonical
+  title: View
+
+customslider.page_edit:
+  route_name: entity.customslider.edit_form
+  base_route: entity.customslider.canonical
+  title: Edit
+
+customslider.delete_confirm:
+  route_name:  entity.customslider.delete_form
+  base_route:  entity.customslider.canonical
+  title: Delete
+  weight: 10

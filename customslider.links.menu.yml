@@ -1,0 +1,10 @@
+entity.customslider.collection:
+  title: 'Custom Slider Listing'
+  route_name: entity.customslider.collection
+  description: 'List Custom Sliders'
+  weight: 10
+customslider.admin.structure.settings:
+  title: Custom Slider Settings
+  description: 'Configure Custom Slider entity'
+  route_name:  customslider.customslider_settings
+  parent: system.admin_structure

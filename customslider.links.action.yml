@@ -1,0 +1,11 @@
+# All action links for this module
+
+customslider.customslider_add:
+  # Which route will be called by the link
+  route_name: customslider.customslider_add
+  title: 'Add Custom Slider'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.customslider.collection
+    - entity.customslider.canonical
