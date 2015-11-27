@@ -32,7 +32,8 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *     "canonical" = "/customslider/{customslider}",
  *     "delete-form" = "/customslider/{customslider}/delete",
  *     "edit-form" = "/customslider/{customslider}/edit",
- *   }
+ *   },
+ *   translatable = TRUE,
  * )
  **/
 class CustomSlider extends ContentEntityBase implements ContentEntityInterface {
