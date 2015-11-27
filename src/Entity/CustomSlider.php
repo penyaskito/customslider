@@ -17,6 +17,7 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *   entity_keys = {
  *     "id" = "id",
  *     "label" = "name",
+ *     "langcode" = "langcode",
  *   },
  *   handlers = {
  *     "list_builder" = "Drupal\customslider\Entity\Controller\CustomSliderListBuilder",
@@ -76,6 +77,18 @@ class CustomSlider extends ContentEntityBase implements ContentEntityInterface {
       ))
       ->setDisplayConfigurable('view', TRUE)
       ->setDisplayConfigurable('form', TRUE);
+
+    $fields['langcode'] = BaseFieldDefinition::create('language')
+      ->setLabel(t('Language'))
+      ->setDescription(t('The node language code.'))
+      ->setTranslatable(TRUE)
+      ->setDisplayOptions('view', array(
+        'type' => 'hidden',
+      ))
+      ->setDisplayOptions('form', array(
+        'type' => 'language_select',
+        'weight' => 2,
+      ));
 
     return $fields;
   }
