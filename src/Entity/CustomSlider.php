@@ -21,6 +21,7 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *   },
  *   handlers = {
  *     "list_builder" = "Drupal\customslider\Entity\Controller\CustomSliderListBuilder",
+ *     "views_data" = "Drupal\views\EntityViewsData",
  *     "form" = {
  *       "default" = "Drupal\customslider\Form\CustomSliderForm",
  *       "add" = "Drupal\customslider\Form\CustomSliderForm",
