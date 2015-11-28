@@ -15,6 +15,26 @@ use Drupal\image\Plugin\Field\FieldType\ImageItem;
  *   default_widget = "slide_image",
  *   default_formatter = "slide",
  *   list_class = "\Drupal\file\Plugin\Field\FieldType\FileFieldItemList",
+ *   column_groups = {
+ *     "file" = {
+ *       "label" = @Translation("File"),
+ *       "columns" = {
+ *         "target_id", "width", "height"
+ *       }
+ *     },
+ *     "alt" = {
+ *       "label" = @Translation("Alt"),
+ *       "translatable" = TRUE
+ *     },
+ *     "title" = {
+ *       "label" = @Translation("Title"),
+ *       "translatable" = TRUE
+ *     },
+ *     "slide_text" = {
+ *       "label" = @Translation("Slide Text"),
+ *       "translatable" = TRUE
+ *     },
+ *   },
  * )
  */
 class SlideItem extends ImageItem {
