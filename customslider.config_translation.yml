@@ -1,0 +1,5 @@
+customslider.settings:
+  title: 'Custom Slider Settings'
+  base_route_name: customslider.customslider_settings
+  names:
+    - customslider.settings
