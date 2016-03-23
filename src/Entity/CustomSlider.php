@@ -14,6 +14,7 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *   id = "customslider",
  *   label = @Translation("Custom Slider"),
  *   base_table = "customslider",
+     data_table = "customslider_field_data",
  *   entity_keys = {
  *     "id" = "id",
  *     "label" = "name",
